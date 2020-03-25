@@ -28,7 +28,7 @@ export default class EditExercise extends Component {
         this.setState({
           username: res.data.username,
           description: res.data.description,
-          duration: res.dada.duration,
+          duration: res.data.duration,
           date: new Date(res.data.date)
         })
       })
@@ -139,7 +139,7 @@ export default class EditExercise extends Component {
         </div>
 
         <div className="form-group">
-          <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
+          <input type="submit" value="Submit Changes" className="btn btn-primary" />
         </div>
       </form>
     </div>
